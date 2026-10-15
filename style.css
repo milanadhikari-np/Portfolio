@@ -1,0 +1,266 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #f1f5f9;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #111c32;
+    padding: 18px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #38bdf8;
+    font-size: 26px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #f1f5f9;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* Home Section */
+.home {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+}
+
+.home-content {
+    max-width: 750px;
+}
+
+.intro {
+    color: #38bdf8;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.home h1 {
+    font-size: 55px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.home h2 {
+    font-size: 28px;
+    color: #a78bfa;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    color: #cbd5e1;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #38bdf8;
+    color: #0f172a;
+    padding: 12px 22px;
+    margin: 5px 8px 5px 0;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #a78bfa;
+    transform: translateY(-3px);
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: #38bdf8;
+    border: 2px solid #38bdf8;
+}
+
+/* Common Section Styling */
+section:not(.home) {
+    padding: 70px 8%;
+    scroll-margin-top: 75px;
+}
+
+section:not(.home) h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 35px;
+    color: #38bdf8;
+}
+
+/* About Section */
+.about {
+    background-color: #111c32;
+    text-align: center;
+}
+
+.about p {
+    max-width: 850px;
+    margin: auto;
+    color: #cbd5e1;
+    font-size: 17px;
+}
+
+/* Skills Section */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.skill-card {
+    background-color: #1e293b;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+.skill-card h3 {
+    color: #a78bfa;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #cbd5e1;
+}
+
+/* Projects Section */
+.projects {
+    background-color: #111c32;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.project-card {
+    background-color: #1e293b;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #a78bfa;
+}
+
+.project-card h3 {
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #cbd5e1;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    color: #cbd5e1;
+    margin-bottom: 18px;
+}
+
+/* Footer */
+footer {
+    background-color: #080f1e;
+    text-align: center;
+    padding: 20px;
+    color: #94a3b8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 18px 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    .home {
+        padding: 60px 5%;
+        min-height: 75vh;
+    }
+
+    .home h1 {
+        font-size: 40px;
+    }
+
+    .home h2 {
+        font-size: 23px;
+    }
+
+    section:not(.home) {
+        padding: 55px 5%;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
+.email-link {
+
+    color: #38BDF8;
+    text-decoration: none;
+}
